@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 test('Partagez vos données bancaires', async ({ page }) => {
     test.setTimeout(180000); // 3 minutes pour le timeout total du test
 
-    // Étape 1 : Accéder à la page web
+    // Étape 1 : Accéder à la première page
     await page.goto('https://connect.preprod.algoan.com/v2/init?' +
                     'client_id=f7be049b0df73459d476fb2d&' +
                     'redirect_uri=https://dashboard.preprod.algoan.com');
